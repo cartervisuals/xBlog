@@ -11,7 +11,7 @@
       <tr>
         <td><%= category.name %></td>
         <td><%= category.created_at.to_time.strftime('%B %e at %l:%M %p') %></td>
-        <td><%= link_to "Edit", admin_categories_edit_path(category), class: "btn btn-primary" %>
+        <td><%= link_to "Edit", edit_admin_category_path(category), class: "btn btn-primary" %>
             <%= link_to "Delete", admin_category_path(category), class: "btn btn-danger", method: :delete, 
                                   data: {confirm: 'Are you sure'} %></td>
       </tr>
