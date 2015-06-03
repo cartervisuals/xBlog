@@ -6,6 +6,9 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '~> 3.0'
+gem "paperclip", "~> 4.2"
+gem "wysiwyg-rails"
+gem "font-awesome-rails"
 
 
 gem 'rails', '4.2.0'
