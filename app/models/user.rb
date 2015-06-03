@@ -25,4 +25,8 @@ class User < ActiveRecord::Base
     end
   end
 
+  def self.search(query)
+    where("name like ? or email like ?", "%#{query}%", "%#{query}%")
+  end
+
 end

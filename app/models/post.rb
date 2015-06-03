@@ -9,4 +9,8 @@ class Post < ActiveRecord::Base
   validates_presence_of :category_id
   validates_presence_of :body
 
+  def self.search(query)
+    where("title like ? or body like ?", "%#{query}%", "%#{query}%")
+  end
+
 end

@@ -5,6 +5,7 @@ gem 'autoprefixer-rails'
 gem 'mail_form'
 gem 'simple_form'
 gem 'bcrypt', '~> 3.1.7'
+gem 'will_paginate', '~> 3.0'
 
 
 gem 'rails', '4.2.0'
